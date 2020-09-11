@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    
+	<!-- Load properties file : sport.properties -->
+	<context:property-placeholder location = "classpath:sport.properties"/>
+    <!-- Define your beans here -->
+	
+	<bean id = "myFortune"
+		 class = "com.srikanth.springDemo.HappyFortuneService">	 
+	</bean>
+	
+	
+	<!-- <bean id = "myCoach"
+		class = "com.srikanth.springDemo.TrackCoach">
+		setup constructor injection
+		<constructor-arg ref = "myFortune"/>
+	</bean>
+	
+	
+	<bean id = "myCricketCoach"
+		class = "com.srikanth.springDemo.CricketCoach">
+		<property name = "fortuneService" ref = "myFortune"></property>
+		
+		Setting literals for email and team
+		<property name="emailAddress" value = "${foo.email}"> </property>
+		<property name="team" value = "${foo.team}"></property>
+	</bean>
+	 -->
+	 
+	<bean id = "myFortuneService"
+		class = "com.srikanth.springDemo.RandomFortuneService">
+	</bean>
+	
+	<bean id = "myGolfCoach"
+		class = "com.srikanth.springDemo.GolfCoach">
+		
+		<constructor-arg ref = "myFortuneService"></constructor-arg>
+	</bean>
+	
+</beans>
+
+
+
+
+

@@ -1,0 +1,47 @@
+package day.twelve;
+
+public class FullTimeEmployee {
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String mobile;
+	private double basic;
+	private double bonus;
+	
+	public FullTimeEmployee() {
+		super();
+	}
+
+	public FullTimeEmployee(int id, String firstName, String lastName, String address, String mobile, double basic,
+			double bonus) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.mobile = mobile;
+		this.basic = basic;
+		this.bonus = bonus;
+	}
+
+	public String getFullName() {
+		return firstName+" "+lastName;
+	}
+	
+	public double computeSal(){
+		return basic + bonus;
+	}
+	
+	public void showDetails() {
+		System.out.println("Id : "+id);
+		System.out.println("Full Name : "+getFullName()); 
+		System.out.println("Gross Salary : "+computeSal()); 
+		System.out.println("Address : "+ address);
+		System.out.println("Mobile : "+mobile); 
+	}
+	
+	public void sendMessage() {
+	 	System.out.println("Salary Added to Account...");
+	}
+}
