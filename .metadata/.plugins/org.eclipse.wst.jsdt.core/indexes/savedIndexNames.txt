@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+/Users/srikanthn/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-268868488.index
-1117435098.index
-557173393.index
-2151279656.index
-2152826913.index
-1225454782.index

@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Fri Jun 12 01:46:03 EDT 2020
-org.eclipse.jst.jee.server\:/binary\:/Users/srikanthn/eclipse-workspace/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-5.0.2.RELEASE.jar=WEB-INF/lib/spring-web-5.0.2.RELEASE.jar
-org.eclipse.jst.jee.server\:/binary\:/Users/srikanthn/eclipse-workspace/spring-mvc-demo/WebContent/WEB-INF/lib/spring-web-5.0.2.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.0.2.RELEASE-sources.jar

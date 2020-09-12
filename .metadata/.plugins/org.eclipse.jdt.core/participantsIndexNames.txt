@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-/Users/srikanthn/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3246518651.index
-/spring-mvc-demo/src
